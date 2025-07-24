@@ -1,52 +1,57 @@
-# City Liability Analysis Project Report
+# Chicago City Liability Analysis Project Report
 
-**Project Name:** City Liability Analysis  
+**Project Name:** Chicago City Liability Analytics Platform  
+**Geographic Focus:** City of Chicago, Illinois  
 **Date:** July 24, 2025  
-**Author:** Data Analysis Team  
+**Author:** Municipal Data Analysis Team  
 **Repository:** profassign (bhrugu1)
 
 ---
 
 ## Executive Summary
 
-This project provides a comprehensive analysis of city liability claims to identify patterns, trends, and operational insights that can help municipal authorities optimize risk management strategies and reduce financial exposure. The analysis processed **75,000 simulated liability claims** spanning from 2015 to 2024, encompassing various incident types across different city divisions.
+This project provides a comprehensive analysis of Chicago municipal liability claims to identify patterns, trends, and operational insights that can help Chicago city authorities optimize risk management strategies and reduce financial exposure across the metropolitan area. The analysis processed **75,000 simulated Chicago liability claims** spanning from 2015 to 2024, covering all major Chicago neighborhoods and city divisions from the Downtown Loop to suburban areas.
 
-### Key Findings:
-- **$14.5 billion** total financial exposure over 10 years
-- **$192,382** average cost per claim
-- **75% claim resolution rate** indicating effective processing
-- **"Poor conditions"** identified as the top operational oversight causing **$2.1 billion** in losses
+### Key Chicago-Specific Findings:
+- **$14.5 billion** total financial exposure for City of Chicago over 10 years
+- **$192,382** average cost per Chicago liability claim
+- **75% claim resolution rate** indicating effective Chicago municipal processing
+- **Geographic Coverage:** 7 major Chicago zones including all land areas while avoiding Lake Michigan
+- **"Poor infrastructure conditions"** identified as the top Chicago operational oversight causing **$2.1 billion** in losses
+- **Seasonal Patterns:** Chicago winter weather claims significantly impact slip & fall incidents
+- **Division Analysis:** Chicago Public Works and Parks & Recreation show highest claim volumes
 
 ---
 
-## Project Architecture
+## Chicago Project Architecture
 
-### Technology Stack
-- **Database:** SQLite (city_claims.db)
+### Technology Stack for Chicago Analytics
+- **Database:** SQLite (chicago_city_claims.db)
 - **Programming Language:** Python 3.13
-- **Data Processing:** pandas, numpy
-- **Visualization:** matplotlib, seaborn, plotly, folium
-- **Text Analysis:** NLTK, spaCy
-- **Data Generation:** faker library
+- **Data Processing:** pandas, numpy for Chicago claims analysis
+- **Visualization:** matplotlib, seaborn, plotly for Chicago dashboards
+- **Geospatial Mapping:** folium for Chicago neighborhood risk mapping
+- **Text Analysis:** NLTK, spaCy for Chicago incident root cause analysis
+- **Data Generation:** faker library with Chicago-specific geographic constraints
 
-### Project Structure
+### Chicago Project Structure
 ```
-City_Liability_Analysis/
+Chicago_City_Liability_Analysis/
 ├── data/
 │   ├── raw/
-│   │   └── simulated_claims.csv (75,000 records)
+│   │   └── chicago_simulated_claims.csv (75,000 Chicago records)
 │   └── processed/
-│       ├── city_claims.db (SQLite database)
-│       └── quarterly_kpis.csv (KPI metrics)
+│       ├── chicago_city_claims.db (Chicago SQLite database)
+│       └── chicago_quarterly_kpis.csv (Chicago KPI metrics)
 ├── python/
 │   ├── src/
-│   │   ├── data_simulation.py (Data generation)
-│   │   ├── load_data_to_db.py (Database loading)
-│   │   ├── analysis.py (Statistical analysis)
-│   │   ├── text_analysis.py (NLP & root cause analysis)
-│   │   └── kpi_calculation.py (Performance metrics)
+│   │   ├── data_simulation.py (Chicago claims data generation)
+│   │   ├── load_data_to_db.py (Chicago database loading)
+│   │   ├── analysis.py (Chicago statistical analysis)
+│   │   ├── text_analysis.py (Chicago NLP & geospatial mapping)
+│   │   └── kpi_calculation.py (Chicago municipal performance metrics)
 │   └── notebooks/
-│       └── exploratory_data_analysis.ipynb
+│       └── chicago_exploratory_data_analysis.ipynb
 ├── sql/
 │   ├── schema.sql (Database structure)
 │   └── queries.sql (Analysis queries)

@@ -1,40 +1,51 @@
-# City Liability Analytics
+# Chicago City Liability Analytics Platform
 
-**City Liability Analytics** analyzes municipal liability claims to identify risk patterns and cost-saving opportunities. Processes 75K simulated claims using Python, SQLite, NLP (NLTK/spaCy), and creates interactive visualizations with Plotly/Folium. Identifies operational oversights costing billions, enabling data-driven municipal risk management.
+**Chicago City Liability Analytics Platform** is a comprehensive data analytics solution that analyzes municipal liability claims for the City of Chicago to identify risk patterns, operational oversights, and cost-saving opportunities. The system processes 75,000 simulated Chicago liability claims using advanced Python analytics, SQLite database management, NLP-powered root cause analysis (NLTK/spaCy), and creates interactive geospatial visualizations covering the greater Chicago metropolitan area.
+
+## 🏙️ Chicago-Specific Features
+
+- **Geographic Focus**: Analysis covers Chicago's 7 major zones including Downtown Loop, North Side, South Side, West Side, and suburban areas
+- **Municipal Context**: Tailored for Chicago's city divisions including Public Works, Parks & Recreation, Fire Services, Transit, Water & Wastewater, and By-law Enforcement
+- **Realistic Geospatial Data**: All 75,000 claims mapped to actual Chicago land areas (avoiding Lake Michigan and water bodies)
+- **Chicago Infrastructure**: Analysis of Chicago-specific issues including pothole claims, winter weather incidents, and urban infrastructure challenges
 
 ## 🎯 Key Features
 
-- **Data Pipeline**: Complete ETL process from simulation to analysis
-- **Text Analytics**: NLP-powered root cause analysis using NLTK and spaCy
-- **Interactive Visualizations**: Plotly charts and Folium geospatial maps
-- **Performance Metrics**: Automated KPI calculation and quarterly reporting
-- **Risk Assessment**: Geographic clustering and operational oversight identification
+- **Complete Data Pipeline**: End-to-end ETL process from Chicago claims simulation to comprehensive analysis
+- **Advanced Text Analytics**: NLP-powered root cause analysis using NLTK and spaCy for Chicago incident patterns
+- **Interactive Chicago Map**: Folium-based geospatial visualizations showing high-risk areas across Chicago neighborhoods
+- **Municipal Performance Metrics**: Automated KPI calculation and quarterly reporting for Chicago city management
+- **Chicago Risk Assessment**: Geographic clustering and operational oversight identification specific to Chicago's urban environment
 
-## 📊 Project Results
+## 📊 Chicago Analysis Results
 
-- **75,000 claims** analyzed (2015-2024)
-- **$14.5 billion** total financial exposure identified
-- **$2.1 billion** attributed to "poor conditions" oversight
-- **75% claim resolution rate** with 45-day average processing time
+- **75,000 Chicago claims** analyzed across metropolitan area (2015-2024)
+- **$14.5 billion** total financial exposure for City of Chicago
+- **$2.1 billion** attributed to infrastructure oversight issues (14.5% of total exposure)
+- **Chicago Geographic Coverage**: 7 major zones from Downtown Loop to suburban areas
+- **Municipal Efficiency**: 75% claim resolution rate with 45-day average processing time
+- **Chicago-Specific Insights**: Identified seasonal patterns, infrastructure risks, and divisional performance across Chicago's municipal departments
 
-## 🏗️ Architecture
+## 🏗️ Chicago Project Architecture
 
 ```
-City_Liability_Analysis/
+Chicago_City_Liability_Analysis/
 ├── data/
-│   ├── raw/simulated_claims.csv
-│   └── processed/city_claims.db
+│   ├── raw/chicago_simulated_claims.csv
+│   └── processed/chicago_city_claims.db
 ├── python/src/
-│   ├── data_simulation.py
-│   ├── load_data_to_db.py
-│   ├── analysis.py
-│   ├── text_analysis.py
-│   └── kpi_calculation.py
+│   ├── data_simulation.py          # Chicago claims data generation
+│   ├── load_data_to_db.py         # Chicago database ETL pipeline
+│   ├── analysis.py                # Chicago statistical analysis
+│   ├── text_analysis.py           # Chicago NLP & geospatial mapping
+│   └── kpi_calculation.py         # Chicago municipal KPI metrics
 ├── sql/
-│   ├── schema.sql
-│   └── queries.sql
+│   ├── schema.sql                 # Chicago claims database schema
+│   └── queries.sql                # Chicago business intelligence queries
 ├── output/
-└── docs/project_report.md
+│   ├── high_loss_claims_map.html  # Interactive Chicago risk map
+│   └── *.html                     # Chicago analytics dashboards
+└── docs/chicago_project_report.md
 ```
 
 ## 🚀 Quick Start
@@ -47,7 +58,8 @@ City_Liability_Analysis/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/bhrugu1/city-liability-analytics.git
+git clone https://github.com/bhrugu1/chicago-city-liability-analytics.git
+cd chicago-city-liability-analytics
 cd city-liability-analytics
 ```
 
