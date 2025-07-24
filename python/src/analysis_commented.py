@@ -1,17 +1,13 @@
 """
-Chicago City Liability Analysis - Statistical Analysis Module
+City Liability Analysis - Statistical Analysis Module
 
-This module performs comprehensive statistical analysis and visualization of Chicago 
-municipal liability claims data. Generates interactive charts, trend analysis, and 
-business intelligence reports specifically for Chicago city risk management and 
-strategic decision-making across all Chicago neighborhoods and municipal divisions.
+This module performs comprehensive statistical analysis and visualization of liability claims data.
+Generates interactive charts, trend analysis, and business intelligence reports for municipal
+risk management and strategic decision-making.
 
-Geographic Focus: Chicago, Illinois metropolitan area
-Municipal Context: Chicago city divisions and infrastructure
-
-Author: Chicago Municipal Data Analysis Team
+Author: Data Analysis Team
 Date: July 2025
-Project: Chicago City Liability Analytics Platform
+Project: City Liability Analytics
 """
 
 import pandas as pd
